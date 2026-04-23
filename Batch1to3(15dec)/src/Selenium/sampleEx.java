@@ -9,8 +9,8 @@ public class sampleEx {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-         WebDriver driver=new ChromeDriver();
-//		 WebDriver driver=new FirefoxDriver();
+//         WebDriver driver=new ChromeDriver();
+		 WebDriver driver=new FirefoxDriver();
 //		 WebDriver driver=new EdgeDriver();
 		 
 		 driver.get("https://www.saucedemo.com/");
