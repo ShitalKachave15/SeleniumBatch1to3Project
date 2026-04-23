@@ -1,0 +1,31 @@
+package DatePickerEx;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class guru99 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://demo.guru99.com/test/");
+		WebElement dateBox = driver.findElement(By.xpath("//form//input[@name='bdaytime']"));
+
+       //Fill date as mm/dd/yyyy as 09/25/2013
+         dateBox.click();
+			
+			  dateBox.sendKeys("09252013");
+			  
+			  //Press tab to shift focus to time field
+			  
+			  dateBox.sendKeys(Keys.TAB);
+			  
+			  //Fill time as 02:45 PM
+			  
+			  dateBox.sendKeys("0245PM");
+	}
+
+}
